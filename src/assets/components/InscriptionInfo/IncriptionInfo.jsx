@@ -1,5 +1,4 @@
 //import { useState } from "react";
-import DatetimeButton from "../components-with-information/Datetimebutton";
 import "./IncriptionInfo.css";
 import FileUploader from "./FileUploader";
 import CommonButton from "../common-button/CommonButton";
@@ -64,14 +63,14 @@ function IncriptionInfo() {
           <DropdownButton
             text="Facultad"
             opciones={opcionesCarrera}
-            seleccion={() => {}}
+            seleccion={() => { }}
           />
         </div>
         <div className="">
           <DropdownButton
             text="Año de carrera"
             opciones={aniosCarrera}
-            seleccion={() => {}}
+            seleccion={() => { }}
           />
         </div>
       </div>
@@ -96,14 +95,14 @@ function IncriptionInfo() {
           <DropdownButton
             text="Materia que te gustaria impartir"
             opciones={optionsMaterias}
-            seleccion={() => {}}
+            seleccion={() => { }}
           />
         </div>
         <div>
           <DropdownButton
             text="Otra materia que te gustaria impartir"
             opciones={optionsMaterias}
-            seleccion={() => {}}
+            seleccion={() => { }}
           />
         </div>
       </div>

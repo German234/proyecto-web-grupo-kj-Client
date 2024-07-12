@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://kj-api.ironcity.network/api/v1/user/";
+const BASE_URL = "http://51.222.84.169:8888/api/v1/user/";
 
 export const getUserById = async (id) => {
   try {
