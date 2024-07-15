@@ -5,22 +5,21 @@ function BannerInfo({ bannerInformation }) {
     <>
       {bannerInformation.map((banner) => (
         <div
-          className={`md:flex ${
-            banner.isReversed ? "md:flex-row-reverse" : "md:flex-row"
-          } md:text-left text-center mt-5 md:items-center md:justify-around md:px-20 flex flex-col items-center text-3xl justify-center`}
+          className={`md:flex ${banner.isReversed ? "md:flex-row-reverse" : "md:flex-row"
+            } md:text-left text-center mt-5 md:items-center md:justify-around md:px-20 flex flex-col items-center text-3xl justify-center`}
           key={banner.title}
         >
           <div className="md:w-3/6 w-4/5 sm:flex sm:flex-col">
             <h2 className="font-bold sm:text-3xl md:text-3xl lg:text-4xl mb-5 font-primary">
               {banner.title}
             </h2>
-            <p className="text-text-secondary font-normal text-sm font-secondary">
+            <p className="text-text-secondary text-lg font-secondary">
               {banner.description}
             </p>
-            {/** TODO: Cambiar el enlace luego! */}
+
             {banner.hasButton && (
               <CommonButton
-                link="#"
+                to="https://www.uca.edu.sv/servicio-social/opciones-de-servicio-social/"
                 text={banner.buttonText}
                 icon={"fa-solid fa-arrow-right"}
               />

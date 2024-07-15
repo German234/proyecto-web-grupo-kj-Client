@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://kj-api.ironcity.network/api/v1/career/";
+const BASE_URL = "http://51.222.84.169:8888/api/v1/career/";
 
 export const getAllCareers = async () => {
   try {
